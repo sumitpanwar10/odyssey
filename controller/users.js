@@ -11,7 +11,7 @@
 //         const registeredUser = await User.register(user, password);
 //         req.login(registeredUser, err => {
 //             if (err) return next(err);
-//             req.flash('success', 'Welcome to Yelp Camp!');
+//             req.flash('success', 'Welcome to Odyssey Camp!');
 //             res.redirect('/campgrounds');
 //         })
 //     } catch (e) {
@@ -47,7 +47,7 @@ module.exports.register=async(req,res)=>{
         const registeredUser=await User.register(user,password);
         req.login(registeredUser,(err)=> {
             if (err) return next(err);
-            req.flash('success','Welcome to Yelp');
+            req.flash('success','Welcome to Odyssey');
             res.redirect('/campgrounds');
         })  
     }
